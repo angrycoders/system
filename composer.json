@@ -1,0 +1,23 @@
+{
+  "name": "jkuatapp-system",
+  "version": "0.0.0",
+  "description": "the system internals",
+  "homepage": "https://bitbucket.org/angrycodersTM/system",
+  "license": "MIT",
+  "keywords": ["system"],
+  "authors": [
+    {
+      "name": "GochoMugo",
+      "email": "mugo@forfuture.co.ke"
+    }
+  ],
+  "require": {
+    "luracast/restler": "dev-master"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-0": {
+      "Jkuatapp\\System": "src/"
+    }
+  }
+}

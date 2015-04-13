@@ -16,6 +16,6 @@ LOG_TITLE="tests"
 
 
 log "running tests with phpunit" 0
-phpunit tests/
+phpunit --bootstrap vendor/autoload.php tests/
 
 

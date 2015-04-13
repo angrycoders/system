@@ -1,13 +1,10 @@
 <?php
 
 
-require ../vendor/autoload.php;
-
-
 namespace Jkuatapp\System;
 
 
-use Luracast\Restler\Restler;
+//use Luracast\Restler\Restler;
 
 
 class Router {
@@ -18,7 +15,7 @@ class Router {
   * Constructs our system router
   */
   public function __construct() {
-    $this->restlerRouter = new Restler();
+    //$this->restlerRouter = new Restler();
   }
 
   /**

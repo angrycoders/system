@@ -5,17 +5,17 @@ namespace Jkuatapp\System;
 
 
 class RouterFactory {
-  protected $router = null;
+  protected static $router = null;
 
   /**
   * Returns a reference to the System router to be used by module
   */
-  public function get() {
+  public static function get() {
     //  create a new system router if it has not yet been created
-    if (! $this->router) {
-      $this->router = new Router();
+    if (! self::$router) {
+      self::$router = new Router();
     }
-    return $this->router;
+    return self::$router;
   }
 
 }

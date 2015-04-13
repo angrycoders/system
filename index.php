@@ -1,5 +1,6 @@
 <?php
 
-echo "will show index page here";
+require "vendor/autoload.php";
 
+Jkuatapp\System\Server::start();
 

@@ -1,5 +1,5 @@
 #
-# Runs a Development Server
+# Installs dependencies
 #
 
 
@@ -12,9 +12,9 @@ source script/utils.sh
 
 
 # script variables
-LOG_TITLE="run-server"
+LOG_TITLE="deps"
 
 
-log "starting development server" 0
-php -S localhost:8080
+log "installing dependencies using composer" 0
+composer install
 

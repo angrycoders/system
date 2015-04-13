@@ -1,5 +1,5 @@
 #
-# Runs a Development Server
+# Runs tests
 #
 
 
@@ -12,9 +12,10 @@ source script/utils.sh
 
 
 # script variables
-LOG_TITLE="run-server"
+LOG_TITLE="tests"
 
 
-log "starting development server" 0
-php -S localhost:8080
+log "running tests with phpunit" 0
+phpunit tests/
+
 

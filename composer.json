@@ -2,7 +2,7 @@
   "name": "angrycoders/system",
   "version": "0.0.0",
   "description": "the system internals",
-  "homepage": "https://bitbucket.org/angrycodersTM/system",
+  "homepage": "https://github.com/angrycoders/system",
   "license": "MIT",
   "keywords": ["system"],
   "authors": [
@@ -13,6 +13,9 @@
   ],
   "require": {
     "luracast/restler": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.6.*"
   },
   "minimum-stability": "dev",
   "autoload": {

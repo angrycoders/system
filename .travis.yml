@@ -1,0 +1,6 @@
+language: php
+php:
+  - 5.4
+install:  script/deps.sh
+script: script/test.sh
+

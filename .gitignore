@@ -4,4 +4,6 @@ vendor/
 # for building
 build/
 
+# we shall ignore the composer lock file during development
+composer.lock
 

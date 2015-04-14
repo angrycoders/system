@@ -16,5 +16,5 @@ LOG_TITLE="deps"
 
 
 log "installing dependencies using composer" 0
-composer install
+composer install --dev --no-interaction
 

@@ -3,4 +3,5 @@ php:
   - 5.4
 install:  script/deps.sh
 script: script/test.sh
+after_script: script/cipush.sh
 

@@ -18,6 +18,7 @@
   * [ ] csrf tokens
   * [ ] api tokens verification
   * [ ] api token generation
+  * [ ] password hashing
 * [ ] user:
   * [ ] creation
   * [ ] deletion

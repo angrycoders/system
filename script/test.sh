@@ -15,7 +15,11 @@ source script/utils.sh
 LOG_TITLE="tests"
 
 
+log "creating directory for logs" 0
+mkdir -p build/logs
+
+
 log "running tests with phpunit" 0
-phpunit --bootstrap vendor/autoload.php tests/
+phpunit --bootstrap vendor/autoload.php --coverage-clover build/logs/clover.xml tests/
 
 

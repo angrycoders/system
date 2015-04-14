@@ -1,3 +1,7 @@
 # composer-installed dependencies
 vendor/
 
+# for building
+build/
+
+

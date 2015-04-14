@@ -22,6 +22,8 @@
 * [ ] user:
   * [ ] creation
   * [ ] deletion
+* [ ] devops
+  * [ ] exclude vendor files from coverage report
 
 
 <a name="style-guide"></a>

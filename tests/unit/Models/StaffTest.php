@@ -32,4 +32,16 @@ class StaffTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($this->staffNo, $this->staff->getStaffNo());
     }
 
+    public function testGetName()
+    {
+        $this->assertEquals($this->name, $this->staff->getName());
+    }
+
+    public function testSetName()
+    {
+        $this->name = "free world";
+        $this->staff->setName($this->name);
+        $this->assertEquals($this->name, $this->staff->getName());
+    }
+
 }

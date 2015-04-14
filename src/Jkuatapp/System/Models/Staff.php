@@ -26,5 +26,15 @@ class Staff extends Account
     {
         $this->staffNo = $newStaffNo;
     }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function setName($newName)
+    {
+        $this->name = $newName;
+    }
 }
 

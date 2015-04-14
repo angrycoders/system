@@ -31,5 +31,17 @@ class StudentTest extends PHPUnit_Framework_TestCase
         $this->student->setRegNo($this->regNo);
         $this->assertEquals($this->regNo, $this->student->getRegNo());
     }
+
+    public function testGetName()
+    {
+        $this->assertEquals($this->name, $this->student->getName());
+    }
+
+    public function testSetName()
+    {
+        $this->name = "free world";
+        $this->student->setName($this->name);
+        $this->assertEquals($this->name, $this->student->getName());
+    }
 }
 

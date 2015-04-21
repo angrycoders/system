@@ -12,6 +12,7 @@
     }
   ],
   "require": {
+    "angrycoders/db": "dev-master",
     "luracast/restler": "dev-master"
   },
   "require-dev": {

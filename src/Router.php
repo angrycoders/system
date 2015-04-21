@@ -33,6 +33,7 @@ class Router
     */
     public function start()
     {
+        $this->restlerRouter->addAuthenticationClass("Jkuatapp\\System\\Authentication");
         $this->restlerRouter->handle();
     }
 

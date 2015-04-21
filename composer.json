@@ -15,12 +15,13 @@
     "luracast/restler": "dev-master"
   },
   "require-dev": {
+    "phpdocumentor/phpdocumentor": "2.*",
     "phpunit/phpunit": "4.6.*",
     "satooshi/php-coveralls": "dev-master"
   },
   "minimum-stability": "dev",
   "autoload": {
-    "psr-0": {
+    "psr-4": {
       "Jkuatapp\\System": "src/"
     }
   }

@@ -16,13 +16,30 @@ class AccountFactory
     {
         $hash = hash("sha512", $password);
         try {
-          $db->insertRecord("student", array(NULL, $username, $hash));
+          $db->insertRecord("account", array(NULL, $username, $hash));
           return new Account(1, $username, $hash);
         } catch(DbException $err) {
           // for debug purposes
           echo $err;
           throw new AccountException("account could not be created", $err);
         }
+    }
+
+    /**
+    * Retrieves an account from Database using their username or
+    * email
+    */
+    public static Get(string $usernameOrEmail)
+    {
+        
+    }
+
+    /**
+    * Retrieves an account from Database using their user ID
+    */
+    public static GetByID(int $accountID)
+    {
+        
     }
 
 }

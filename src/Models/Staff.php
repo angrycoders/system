@@ -4,12 +4,12 @@ namespace Jkuatapp\System\Models;
 
 class Staff extends Account
 {
+    protected $account;
     protected $staffID;
     protected $staffNo;
     protected $name;
 
-    public function __construct($accountID, $username, $password,
-        $staffID, $staffNo, $name)
+    public function __construct($account, $staffID, $staffNo, $name)
     {
         parent::__construct($accountID, $username, $password);
         $this->staffID = $staffID;

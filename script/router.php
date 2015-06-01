@@ -15,7 +15,8 @@ if (preg_match("/\.(?:php|html)$/", $_SERVER["REQUEST_URI"])) {
     // E.g. /user/ or /user
     // We try serving index.php first
     // Otherwise try index.html
-    $prefix = $ROOT . $_SERVER["REQUEST_URI"];
+    $target = rtrim($_SERVER["REQUEST_URI"], "/");
+    $prefix = $ROOT . $target;
     $html = $prefix . "/index.html";
     $php = $prefix . "/index.php";
     if (file_exists($php)) {

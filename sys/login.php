@@ -1,22 +1,25 @@
 <?php
 
-require "../vendor/autoload.php";
+require __DIR__ . "/../vendor/autoload.php";
+
 
 use Jkuatapp\System\Authentication;
 
+
+session_start();
+
 $email = $_POST['email'];
 $password = $_POST['password'];
+$user = Authentication::login($email, $password);
 
-$loggedIn = Authentication::login($email, $password);
 
-if ($loggedIn) {
-    // redirect to user homepage
-    // header("Location: /www/user/");
-    header("Content-type: application/json");
-    echo '{ "url": "/www/user" }';
+if ($user) {
+    $_SESSION['username'] = $user['username'];
+    unset($_SESSION['login_error']);
+    header("Location: /www/user/");
 } else {
-    // Return an Error message
     http_response_code(401);
-    echo "wrong email-password combination";
+    $_SESSION['login_error'] = "wrong email-password combination";
+    header("Location: /www/login/");
 }
 

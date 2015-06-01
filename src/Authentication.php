@@ -11,7 +11,7 @@ class Authentication
             $password != "ian") {
             return false;
         }
-        return "session-token";
+        return array("username"=>"gocho");
     }
 }
 

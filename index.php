@@ -2,5 +2,6 @@
 
 require "vendor/autoload.php";
 
-Jkuatapp\System\Server::start();
+// automatically redirect to our homepage
+header("Location: /www/");
 

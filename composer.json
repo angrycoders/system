@@ -12,18 +12,13 @@
     }
   ],
   "require": {
-    "angrycoders/db": "dev-master",
-    "luracast/restler": "dev-master"
+    "angrycoders/db": "dev-master"
   },
-  "require-dev": {
-    "phpdocumentor/phpdocumentor": "2.*",
-    "phpunit/phpunit": "4.6.*",
-    "satooshi/php-coveralls": "dev-master"
-  },
+  "require-dev": { },
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "Jkuatapp\\System": "src/"
+      "Jkuatapp\\System\\": "src/"
     }
   }
 }

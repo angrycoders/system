@@ -7,3 +7,6 @@ build/
 # we shall ignore the composer lock file during development
 composer.lock
 
+// Symlink to our web interface
+www
+

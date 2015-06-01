@@ -9,9 +9,9 @@
 
 ## running:
 
-The **current strategy** is more of a convenience to allow faster development.
+This **current strategy** is more of a convenience to allow faster development.
 
-1. A symbolic link needs to be created at `./www` (relative to root of this repo) pointing to the cloned repo of **angrycoders/system-www**.
+1. A symbolic link needs to be created at `./www` (relative to root of this repo) pointing to the **built/compiled** user-interface files (from [angrycoders/system-www](https://github.com/angrycoders/system-www)).
 
 2. Start the web server:
     ```bash

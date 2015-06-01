@@ -16,5 +16,5 @@ LOG_TITLE="run-server"
 
 
 log "starting development server" 0
-php -S localhost:8080
+php -S localhost:8080 script/router.php
 
